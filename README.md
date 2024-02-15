@@ -1,8 +1,13 @@
 # Intro into Entra Global Secure Access
 
-Entra GSA is Microsoft's SSE (Security Service Edge) Solution and consists of 2 main services - 
-#### Entra Internet Access & Entra Private Access.
+In this write-up I will dive into one of the two components that make up the Entra Global Secure Access suite: Entra Private Access.
+As a quick intro, what is Entra Global Secure Access (GSA) ? and how do its two main components stack up ? 
 
+## Intro into GSA
+
+Entra GSA is Microsoft's SSE (Security Service Edge) Solution and consists of 2 main services:
+- Entra Internet Access 
+- Entra Private Access.
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/global-secure-access-diagram.png)
 
