@@ -77,7 +77,7 @@ In order to achieve this, my Windows Server is confirmed to have line of sight w
 
 Here one can group multiple connectors into a group for redundancy purposes. For production a minimum of 2 servers is recommended. The servers need to share the common basics such as connectivity to the "to be exposed" service(s). 
 
-#### 3. Antra App Registration
+#### 3. Entra App Registration
 
 To define the exposed service one can create an Enterprise Application, name it, select the Connector Group to be used ( step 2) and under Application Segment, define an Application Segment, where one defines the (private) FQDN or rfc1918 IP-address and the Portnumber of the service. In this case, for SSH, its port 22 : 
 
