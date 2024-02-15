@@ -69,7 +69,9 @@ The Entra Private Access service consists of 3 main components:
 
 #### 0. Make sure you meet the prerqs 
 
+Check https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-get-started-with-global-secure-access#prerequisites 
 
+and amin access to the Entra Admin Center https://entra.microsoft.com 
 
 #### 1. Connector Service
 
