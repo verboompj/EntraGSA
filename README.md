@@ -92,5 +92,7 @@ Next, we have to setup a Traffic Forwarding Profile. This enables our configurat
 
 #### 3. Global Secure Access Client
 
+Installing the client is pretty straight forward, there are a few catches, such as the client device having to be either Entra or Hybrid joined ( not registered) The requirements are listed here: https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-install-windows-client#prerequisites
+
 
 
