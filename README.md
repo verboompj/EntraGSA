@@ -83,6 +83,10 @@ To define the exposed service one can create an Enterprise Application, name it,
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/EntraAppEnt2.png)
 
+Next, we have to setup a Traffic Forwarding Profile. This enables our configuration of the Enterprise APp to flow to the clients in the field. This profile allows you to define further policies such as conditional access policies as well. Note that without such additional policy, Entra ID authentication is still applicable. 
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/forwarding.png)
+
 
 
 
