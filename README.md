@@ -9,6 +9,8 @@ As a quick intro, what is Entra Global Secure Access (GSA) and how do its two ma
 [Setup Entra Private Access](https://github.com/verboompj/EntraGSA/blob/main/README.md#setup-entra-private-access)
 
 - [1. Connector Service](https://github.com/verboompj/EntraGSA/blob/main/README.md#2-connector-service)
+- [2. Entra App registration](https://github.com/verboompj/EntraGSA/blob/main/README.md#2-entra-app-registration)
+- [3. Global Secure Access Client](https://github.com/verboompj/EntraGSA?tab=readme-ov-file#3-global-secure-access-client)
 
 
 ## Intro into GSA
