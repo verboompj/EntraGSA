@@ -132,6 +132,8 @@ It seemed to trigger the registration of the user object in the Global Secure Ac
 
 Since the product at this time is still in preview, chances are this behavior may chance.
 
+### Concluding
+
 And there you have it. SSH connectivity, no line of sight, and Entra based authentication. 
 As the product currently is in Preview, I would advice to get familiar with the technology right away, so your organisation is ready when GA hits. 
 This has such potential, not only as a VPN replacement. And when combining with Entra Internet Access we have a whole new toolset on our belts that enables better availability of services under secure conditions. Can't wait. 
