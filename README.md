@@ -61,7 +61,7 @@ The Entra Private Access service consists of 3 main components:
 
 3. A Client - Global Secure Access Client - installers available for Windows, Android, IOS and macOS - installed on the client device.
 
-![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/private-access-diagram-quick-access2.png)
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/private-access-diagram-quick-access3.png)
 
 
 #### 1. Connector Service
