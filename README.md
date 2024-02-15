@@ -129,9 +129,11 @@ Instead, the GSA Filterdriver picks up my request to connect to the known IP add
 
 I found in my case Alyx only had to sign in once, and could leverage SSO from that point on to all GSA Apps.
 It seemed to trigger the registration of the user object in the Global Secure Access Client's local profile:
+
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/GSAprofile.png)
 
 Since the product at this time is still in preview, chances are this behavior may chance.
+
 
 ### Concluding
 
