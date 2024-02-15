@@ -112,7 +112,7 @@ Thats it, you can visit the Dashboard page for an overview of theps 1 and 2:
 
 Installing the client is straight forward, there are a few catches, such as the client device having to be either Entra or Hybrid joined (not registered) The requirements are listed here: https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-install-windows-client#prerequisites
 
-Once setup, you will find the NIC of your client device has a new filterdriver to catch traffic destined for GLobal Secure Access. This is the way the client redirects this traffic to the destination (Connector Group, step 1) over the Entra service backplane, as defined defined in your Traffic Forwarding Profile (step 2). 
+Once setup, you will find the NIC of your client device has a new filterdriver to catch traffic destined for Global Secure Access. This is the way the client redirects this traffic to the destination (Connector Group, step 1) over the Entra service backplane, as defined defined in your Traffic Forwarding Profile (step 2). 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/NIC.png)
 
