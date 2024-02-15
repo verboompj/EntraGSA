@@ -61,7 +61,7 @@ The Entra Private Access service consists of 3 main components:
   
 1. A Connector - This is a (group of) server(s) that has a line of sight to the service one wants to expose - a web, rds, ssh, whatever service you want your client to be able to connect to. On these servers one installs the Connnector Service to reverse-connect into the Entra platform. 
 
-2. An Entra Application registration, representing the service you'd like to expose, the conditional access policy and the user asignment. This is the " traditional" Entra Enterprise Application as we know it.
+2. An Entra Application registration, representing the service you'd like to expose, the conditional access policy and the user asignment. This is the " traditional" Entra Enterprise Application as we know it + Network Access properties.
 
 3. A Client - Global Secure Access Client - installers available for Windows, Android, IOS and macOS - installed on the client device.
 
