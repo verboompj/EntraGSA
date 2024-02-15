@@ -1,24 +1,34 @@
 # Entra Global Secure Access
 
-Entra GSA is Microsoft's SSE ( Security Service Edge) Solution and consists of 2 main services :
+Entra GSA is Microsoft's SSE (Security Service Edge) Solution and consists of 2 main services :
 
 ### Entra Internet Access - 
 Microsoft Entra Internet Access secures access to Microsoft 365, SaaS, and public internet apps while protecting users, devices, and data against internet threats.
+It provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. 
 
-Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. 
-
-#### Key features
+#### Key features ( amongst others) 
 - Prevent stolen tokens from being replayed with the compliant network check in Conditional Access.
 - Apply universal tenant restrictions to prevent data exfiltration to other tenants or personal accounts including anonymous access.
 - Enriched logs with network and device signals currently supported for SharePoint Online traffic.
-- Improve the precision of risk assessments on users, locations, and devices.
-- Deploy side-by-side with third party SSE solutions.
-- Acquire network traffic from the desktop client or from a remote network, such as a branch location.
-- Dedicated public internet traffic forwarding profile.
 - Protect user access to the public internet while leveraging Microsoft's cloud-delivered, identity-aware SWG solution.
 - Enable web content filtering to regulate access to websites based on their content categories and domain names.
 - Apply universal Conditional Access policies for all internet destinations, even if not federated with Microsoft Entra ID, through integration with Conditional 
   Access session controls.
+
+i.e. an Identity (& Device) based upstream Secure Web Gateway as part of the Entra platform, leveraging CASB and Conditional Access components of that very suite.  
+
+### Entra Private Access - 
+Microsoft Entra Private Access provides your users - whether in an office or working remotely - secured access to your private, corporate resources. Microsoft Entra Private Access builds on the capabilities of Microsoft Entra application proxy and extends access to any private resource, port, and protocol.
+
+#### Key features
+- Quick Access: Zero Trust based access to a range of IP addresses and/or FQDNs without requiring a legacy VPN.
+- Per-app access for TCP apps (UDP support in development).
+- Modernize legacy app authentication with deep Conditional Access integration.
+- Provide a seamless end-user experience by acquiring network traffic from the desktop client and deploying side-by-side with your existing third-party SSE solutions.
+
+i.e. Azure AD ( Entra) App Proxy on Steroids; the VPN killer :-) 
+
+
 
 This is a very common scenario, where for instance the Network Team manages the central VNET and all of its sub-components ( Subnets, IP-Adressing, Gateways, ExpressRoutes, etc), all contained within a specific Resource Group that is subjected to the Azure RBAC model. 
 
