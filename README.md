@@ -8,7 +8,7 @@ As a quick intro, what is Entra Global Secure Access (GSA) and how do its two ma
 
 [Setup Entra Private Access](https://github.com/verboompj/EntraGSA/blob/main/README.md#setup-entra-private-access)
 
-- [Connector Service](https://github.com/verboompj/EntraGSA/blob/main/README.md#2-connector-service)
+- [1. Connector Service](https://github.com/verboompj/EntraGSA/blob/main/README.md#2-connector-service)
 
 
 ## Intro into GSA
@@ -54,16 +54,17 @@ It also leverages Entra's other services such as conditional access framework, M
 ## Setup Entra Private Access
 
 The Entra Private Access service consists of 3 main components:
-1. A Client - Global Secure Access Client - installers available for Windows, Android, IOS and macOS - installed on the client device.
   
-2. A Connector - This is a (group of) server(s) that has a line of sight to the service one wants to expose - a web, rds, ssh, whatever service you want your client to be able to connect to. On these servers one installs the Connnector Service to reverse-connect into the Entra platform. 
+1. A Connector - This is a (group of) server(s) that has a line of sight to the service one wants to expose - a web, rds, ssh, whatever service you want your client to be able to connect to. On these servers one installs the Connnector Service to reverse-connect into the Entra platform. 
 
-3. An Entra Application registration, representing the service you'd like to expose, the conditional access policy and the user asignment. This is the " traditional" Entra Enterprise Application as we know it.
+2. An Entra Application registration, representing the service you'd like to expose, the conditional access policy and the user asignment. This is the " traditional" Entra Enterprise Application as we know it.
+
+3. A Client - Global Secure Access Client - installers available for Windows, Android, IOS and macOS - installed on the client device.
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/private-access-diagram-quick-access2.png)
 
 
-#### 2. Connector Service
+#### 1. Connector Service
 
 The connector service, in my example, is a Windows Server deployed in Azure. It is deployed in the same vnet , however on a different subnet, than the service I'd like to publish/expose using Entra Private access. In my case I'd like to expose a set of Linux Virtual machines over SSH. 
 
@@ -77,7 +78,7 @@ In order to achieve this, my Windows Server is confirmed to have line of sight w
 
 Here one can group multiple connectors into a group for redundancy purposes. For production a minimum of 2 servers is recommended. The servers need to share the common basics such as connectivity to the "to be exposed" service(s). 
 
-#### 3. Entra App Registration
+#### 2. Entra App Registration
 
 To define the exposed service one can create an Enterprise Application, name it, select the Connector Group to be used ( step 2) and under Application Segment, define an Application Segment, where one defines the (private) FQDN or rfc1918 IP-address and the Portnumber of the service. In this case, for SSH, its port 22 : 
 
@@ -87,7 +88,7 @@ Next, we have to setup a Traffic Forwarding Profile. This enables our configurat
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/forwarding.png)
 
-#### 1. Global Secure Access Client
+#### 3. Global Secure Access Client
 
 
 
