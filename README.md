@@ -100,7 +100,7 @@ Other options are a complete CIDR range or a custom IP-to-IP range and Port comb
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/EntraAppEnt2.png)
 
-Next, we have to setup a Traffic Forwarding Profile. This enables our configuration of the Entra Private Access Enterprise App to flow to the clients in the field. 
+Next, we have to setup a Traffic Forwarding Profile. This enables our configuration of the Entra Private Access Enterprise App to flow to the clients in the field. Select the Private access profile and activate it.
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/forwarding.png)
 
