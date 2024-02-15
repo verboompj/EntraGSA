@@ -63,16 +63,23 @@ The Entra Private Access service consists of 3 main components:
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/private-access-diagram-quick-access2.png)
 
 
-### 2. Connector Service
+#### 2. Connector Service
 
 The connector service in my example is a Windows Server deployed in Azure. It is deployed in the same vnet , however on a different subnet, than the service I'd like to publish/expose using Entra Private access. In my case I'd like to expose a set of Linux Virtual machines over SSH. Non of my deployed servers has a public IP address. In this case my Windows server does have outbound Internet connectivity using a NAT gateway. No port forwards have been configured, and only outbound connectivity is allowed.
 
 I want users to be able to connect to these Linux servers over SSH without setting up any form of network connectivity using traditional service such as VPN. Instead, I'd like my users to connect from their local devices to the private IP addresses of these Linux VM's, directly over the internet. In their case any wifi / 5G connection available.
 
-In order to achieve this, my Windows Server is confirmed to have line of sight with the Linux servers, has outbound Internet connectivity and is equiped with the (Entra) Connector Service. Thats it, as soon as the service is installed, the server pops up in the Entra portal as an available connector: 
+In order to achieve this, my Windows Server is confirmed to have line of sight with the Linux servers, has outbound Internet connectivity and is equiped with the (Entra) Connector Service. As soon as the service is installed, the server pops up in the Entra portal as an available connector: 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/connectors2.png)
 
+Here one can group multiple connectors into a group for redundancy purposes. For production a minimum of 2 servers is recommended. The servers need to share the common basics such as connectivity to the "to be exposed" service(s). 
+
+#### 3. Antra App Registration
+
+To define the exposed service one can create an Enterprise Application, name it, select the Connector Group to be used ( step 2) and under APplication Segment, define an Application Segment, where one defines the FQDN or IP and the Portnumber of the service. In this case for SSH its port 22 : 
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/EntraAppEnt2.png)
 
 
 
