@@ -5,7 +5,7 @@ In this write-up I will dive into one of the two components that make up the Ent
 As a quick intro, what is Entra Global Secure Access (GSA) and how do its two main components stack up ? 
 
 [Intro into GSA](https://github.com/verboompj/EntraGSA/blob/main/README.md#intro-into-gsa)
-
+[Setup Entra Private Access](
 
 
 
@@ -46,7 +46,7 @@ Microsoft Entra Private Access provides your users - whether in an office or wor
 i.e. Azure AD ( Entra) App Proxy on Steroids. This is a service of particular interest to me personally, as I love to phase out any form of (Client)VPN service wherever I see them. This is that very VPN killer service that promises to accomplish just that. 
 It also leverages Entra's other services such as conditional access framework, MFA, RBAC, etc. Lets explore.
 
-
+## Setup Entra Private Access
 
 
 
