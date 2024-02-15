@@ -67,6 +67,9 @@ The Entra Private Access service consists of 3 main components:
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/private-access-diagram-quick-access3.png)
 
+#### 0. Make sure you meet the prerqs 
+
+
 
 #### 1. Connector Service
 
@@ -92,6 +95,10 @@ Other options are a complete CIDR range or a custom IP-to-IP range and Port comb
 Next, we have to setup a Traffic Forwarding Profile. This enables our configuration of the Entra Private Access Enterprise App to flow to the clients in the field. 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/forwarding.png)
+
+Thats it, you can visit the Dashboard page for an overview of theps 1 and 2:
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/EntraSummary2.png)
 
 #### 3. Global Secure Access Client
 
