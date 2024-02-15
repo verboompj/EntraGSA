@@ -69,11 +69,12 @@ The Entra Private Access service consists of 3 main components:
 
 #### 0. Make sure you meet the prerqs 
 
-Check out https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-get-started-with-global-secure-access#prerequisites 
+Make sure you have admin access to the Entra Admin Center https://entra.microsoft.com 
+Make sure you have the required P1 licence(s) assigned to your (test) users
+
+Requirements may change over time, make sure to keep track using this URL: https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-get-started-with-global-secure-access#prerequisites 
 
 
-
-And make sure you have admin access to the Entra Admin Center https://entra.microsoft.com 
 
 #### 1. Connector Service
 
