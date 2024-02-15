@@ -2,9 +2,23 @@
 
 Entra GSA is Microsoft's SSE ( Security Service Edge) Solution and consists of 2 main services :
 
-Entra Internet Access - Microsoft Entra Internet Access secures access to Microsoft 365, SaaS, and public internet apps while protecting users, devices, and data against internet threats.
+### Entra Internet Access - 
+Microsoft Entra Internet Access secures access to Microsoft 365, SaaS, and public internet apps while protecting users, devices, and data against internet threats.
 
-Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
+Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. 
+
+#### Key features
+- Prevent stolen tokens from being replayed with the compliant network check in Conditional Access.
+- Apply universal tenant restrictions to prevent data exfiltration to other tenants or personal accounts including anonymous access.
+- Enriched logs with network and device signals currently supported for SharePoint Online traffic.
+- Improve the precision of risk assessments on users, locations, and devices.
+- Deploy side-by-side with third party SSE solutions.
+- Acquire network traffic from the desktop client or from a remote network, such as a branch location.
+- Dedicated public internet traffic forwarding profile.
+- Protect user access to the public internet while leveraging Microsoft's cloud-delivered, identity-aware SWG solution.
+- Enable web content filtering to regulate access to websites based on their content categories and domain names.
+- Apply universal Conditional Access policies for all internet destinations, even if not federated with Microsoft Entra ID, through integration with Conditional 
+  Access session controls.
 
 This is a very common scenario, where for instance the Network Team manages the central VNET and all of its sub-components ( Subnets, IP-Adressing, Gateways, ExpressRoutes, etc), all contained within a specific Resource Group that is subjected to the Azure RBAC model. 
 
