@@ -84,7 +84,8 @@ Here one can group multiple connectors into a group for redundancy purposes. For
 
 #### 2. Entra App Registration
 
-To define the exposed service one can create an Enterprise Application, name it, select the Connector Group to be used ( step 2) and under Application Segment, define an Application Segment, where one defines the (private) FQDN or rfc1918 IP-address and the Portnumber of the service. In this case, for SSH, its port 22 : 
+To define the exposed service one can create an Enterprise Application, name it, select the Connector Group to be used ( step 2) and under Application Segment, define an Application Segment, where one defines the (private) FQDN or rfc1918 IP-address and the Portnumber of the service. In this case, for SSH, its port 22. 
+Other options are a complete CIDR range or a custom IP-to-IP range and Port combination.  
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/EntraAppEnt2.png)
 
