@@ -120,7 +120,7 @@ Once setup, you will find the NIC of your client device has a new filterdriver t
 
 The client device I will use to test is a local Hyper-V guest. A windows 11 Enterprise client with TPM enabled, Entra Joined. 
 
-From its local commandline, i have asked it to setup a SSH connection with one of the linux servers in Azure. Obviously there is no network connection such as VPN or ExpressRoute connecting this Virtual Client with my Azure network. 
+From its local commandline, i have asked it to setup a SSH connection with one of the linux servers in Azure using its private IP address of 10.40.0.4 . Obviously there is no network connection such as VPN or ExpressRoute connecting this Virtual Client with my Azure network. 
 
 Instead, the GSA Filterdriver picks up my request to connect to the known IP address and port combination, as defined in the Enterprise App and Trafic Profile and presents an Entra sign-in. Alyx gets a Sign In request, and once completed she can successfully connect to the SSH service in Azure.
 
