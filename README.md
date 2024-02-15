@@ -2,7 +2,7 @@
 
 In this write-up I will dive into one of the two components that make up the Entra Global Secure Access suite: Entra Private Access.
 
-As a quick intro, what is Entra Global Secure Access (GSA) ? and how do its two main components stack up ? 
+As a quick intro, what is Entra Global Secure Access (GSA) and how do its two main components stack up ? 
 
 ## Intro into GSA
 
