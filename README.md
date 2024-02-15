@@ -10,7 +10,7 @@ Entra GSA is Microsoft's SSE (Security Service Edge) Solution and consists of 2 
 - Entra Internet Access 
 - Entra Private Access.
 
-![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/global-secure-access-diagram.png)
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/global-secure-access-diagram.png)
 
 
 
