@@ -38,8 +38,8 @@ Microsoft Entra Private Access provides your users - whether in an office or wor
 - Modernize legacy app authentication with deep Conditional Access integration.
 - Provide a seamless end-user experience by acquiring network traffic from the desktop client and deploying side-by-side with your existing third-party SSE solutions.
 
-i.e. Azure AD ( Entra) App Proxy on Steroids. This is a service of particular interest to me personally as I would love to phase out any form of (Client)VPN service wherever I see them. This is that very VPN killer that ptomises to do just that. 
-It also leverages Entra's other services such as conditional access rules, MFA, etc. Lets explore.
+i.e. Azure AD ( Entra) App Proxy on Steroids. This is a service of particular interest to me personally, as I love to phase out any form of (Client)VPN service wherever I see them. This is that very VPN killer service that promises to accomplish just that. 
+It also leverages Entra's other services such as conditional access framework, MFA, RBAC, etc. Lets explore.
 
 
 
@@ -51,47 +51,4 @@ It also leverages Entra's other services such as conditional access rules, MFA, 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-The results:
-
-![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/72subnetid.PNG)
-
-Next, we create the VM and call the variable `SUBNETID` :
-
-`az vm create \`
-
-`  --resource-group mynewrg \`
-
-`  --name myVM18 \`
-
-`  --image UbuntuLTS \`
-
-#### `  --subnet $SUBNETID \`
-
-`  --admin-username azureuser \`
-
-`  --generate-ssh-keys \`
-
-`  --storage-sku Premium_LRS \`
-
-`  --os-disk-size-gb 50 \`
-
-`  --size Standard_F4s_v2 \`
-
-`  --accelerated-networking true \`
-
-![Screenshot](https://github.com/verboompj/Networking/blob/master/Pictures/73vmcreated.png)
-
-result :-) 
 
