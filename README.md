@@ -81,7 +81,7 @@ Requirements may change over time, make sure to keep track using this URL: https
 
 Download and install the Connector Service from the Entra Admin portal on a available (Windows)server.
 
-The connector service/server, in my example, is a Windows Server deployed in Azure. It is deployed in the same vnet , however on a different subnet, than the service I'd like to publish/expose using Entra Private access. In my case I'd like to expose a set of Linux Virtual machines over SSH. 
+The connector service/server, in my example, is a Windows server deployed in Azure. It is deployed in the same vnet , however on a different subnet, than the service I'd like to publish/expose using Entra Private access. In my case I'd like to expose a set of Linux Virtual machines over SSH. 
 
 Non of my deployed servers has a public IP address. In this case my Windows server does have outbound Internet connectivity using a NAT gateway. No port forwards have been configured, and only outbound connectivity is allowed.
 
