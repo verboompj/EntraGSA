@@ -127,11 +127,10 @@ Instead, the GSA Filterdriver picks up my request to connect to the known IP add
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/Client_catch.png)
 
 I found in my case Alyx only had to sign in once, and could leverage SSO from that point on to all GSA Apps.
-It seemed to trigger the registration of the user object in the Global Secure Access Client's local profile.
+It seemed to trigger the registration of the user object in the Global Secure Access Client's local profile:
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/GSAprofile.png)
 
 Since the product at this time is still in preview, chances are this behavior may chance.
-
-![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/GSAprofile.png)
 
 And there you have it. SSH connectivity, no line of sight, and Entra based authentication. 
 As the product currently is in Preview, I would advice to get familiar with the technology right away, so your organisation is ready when GA hits. 
