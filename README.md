@@ -65,7 +65,9 @@ The Entra Private Access service consists of 3 main components:
 
 #### 2. Connector Service
 
-The connector service, in my example, is a Windows Server deployed in Azure. It is deployed in the same vnet , however on a different subnet, than the service I'd like to publish/expose using Entra Private access. In my case I'd like to expose a set of Linux Virtual machines over SSH. Non of my deployed servers has a public IP address. In this case my Windows server does have outbound Internet connectivity using a NAT gateway. No port forwards have been configured, and only outbound connectivity is allowed.
+The connector service, in my example, is a Windows Server deployed in Azure. It is deployed in the same vnet , however on a different subnet, than the service I'd like to publish/expose using Entra Private access. In my case I'd like to expose a set of Linux Virtual machines over SSH. 
+
+Non of my deployed servers has a public IP address. In this case my Windows server does have outbound Internet connectivity using a NAT gateway. No port forwards have been configured, and only outbound connectivity is allowed.
 
 I want users to be able to connect to these Linux servers over SSH without setting up any form of network connectivity using traditional service such as VPN. Instead, I'd like my users to connect from their local devices to the private IP addresses of these Linux VM's, directly over the internet. In their case any wifi / 5G connection available.
 
