@@ -48,7 +48,8 @@ Microsoft Entra Private Access provides your users - whether in an office or wor
 i.e. Azure AD ( Entra) App Proxy on Steroids. This is a service of particular interest to me personally, as I love to phase out any form of (Client)VPN service wherever I see them. This is that very VPN killer service that promises to accomplish just that. 
 It also leverages Entra's other services such as conditional access framework, MFA, RBAC, etc. Lets explore.
 
-
+##
+##
 
 ## Setup Entra Private Access
 
