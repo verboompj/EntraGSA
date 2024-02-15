@@ -86,13 +86,28 @@ To define the exposed service one can create an Enterprise Application, name it,
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/EntraAppEnt2.png)
 
-Next, we have to setup a Traffic Forwarding Profile. This enables our configuration of the Entra Private Access Enterprise App to flow to the clients in the field. This profile allows you to define further policies such as conditional access policies as well. Note that without such additional policy, Entra ID authentication in its basic form is still enforced. 
+Next, we have to setup a Traffic Forwarding Profile. This enables our configuration of the Entra Private Access Enterprise App to flow to the clients in the field. 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/forwarding.png)
 
 #### 3. Global Secure Access Client
 
-Installing the client is pretty straight forward, there are a few catches, such as the client device having to be either Entra or Hybrid joined ( not registered) The requirements are listed here: https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-install-windows-client#prerequisites
+Installing the client is straight forward, there are a few catches, such as the client device having to be either Entra or Hybrid joined ( not registered) The requirements are listed here: https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-install-windows-client#prerequisites
+
+Once setup, you will find the NIC of your client device has a new filterdriver to catch traffic destined for GLobal Secure Access. This is the way the client redirects this traffic to the destination (Connector Group, step 1) over the Entra service backplane, as defined defined in your Traffic Forwarding Profile ( step 2). 
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/NIC.png)
+
+## Testing in practice 
+
+The client device I will use to test is a local Hyper-V guest. A windows 11 Enterprise client with TPM enabled, Entra Joined. 
+
+From its local commandline, i have asked it to setup a SSH connection with one of the linux servers in Azure. Obviously there is no network connection such as VPN or ExpressRoute connecting this Virtual Client with my Azure network. 
+
+Instead, the GSA Filterdriver picks up my request to connect to the known IP address and port combination, as defined in the Enterprise App and Trafic Profile and presents an Entra sign-in. Alyx gets a Sign In request, and once completed she can successfully connect to the SSH service in Azure.
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/Client_catch.png)
+
 
 
 
