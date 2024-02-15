@@ -5,6 +5,7 @@ In this write-up I will dive into one of the two components that make up the Ent
 As a quick intro, what is Entra Global Secure Access (GSA) and how do its two main components stack up ? 
 
 [Intro into GSA](https://github.com/verboompj/EntraGSA/blob/main/README.md#intro-into-gsa)
+
 [Setup Entra Private Access](https://github.com/verboompj/EntraGSA/blob/main/README.md#setup-entra-private-access)
 
 
