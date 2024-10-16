@@ -10,6 +10,8 @@ In this write-up I will dive into one of the two components that make up the Ent
 
 [Part One of Entra GSA - Initial Setup](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part1.md)
 
+[Part Two of Entra GSA - SMB over GSA](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part2.md)
+
 
 
 ## Intro into GSA
