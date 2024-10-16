@@ -5,15 +5,15 @@
 
 The Entra Private Access service consists of 3 main components:
   
-1. A Connector - This is a (group of) server(s) that has a line of sight to the service one wants to expose - a web, rds, ssh, whatever service you want your client to be able to connect to. On these servers one installs the Connnector Service to reverse-connect into the Entra platform. 
+1. A Connector - This is a (group of) server(s) that has a line of sight to the service one wants to expose - a web, rds, ssh, whatever service you want your client to be able to connect to. On these servers one installs the Connector Service to reverse-connect into the Entra platform. 
 
-2. An Entra Application registration, representing the service you'd like to expose, the conditional access policy and the user asignment. This is the " traditional" Entra Enterprise Application as we know it + Network Access properties.
+2. An Entra Application registration, representing the service you'd like to expose, the conditional access policy and the user assignment. This is the " traditional" Entra Enterprise Application as we know it + Network Access properties.
 
 3. A Client - Global Secure Access Client - installers available for Windows, Android, IOS and macOS - installed on the client device.
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/private-access-diagram-quick-access3.png)
 
-#### 0. Make sure you meet the prerqs 
+#### 0. Make sure you meet the prereqs 
 
 Make sure you have admin access to the Entra Admin Center https://entra.microsoft.com 
 
@@ -33,7 +33,7 @@ Non of my deployed servers have a public IP address assigned. In this case my Wi
 
 I want users to be able to connect to these Linux servers over SSH without setting up any form of network connectivity using traditional service such as VPN. Instead, I'd like my users to connect from their local devices to the private IP addresses of these Linux VM's, directly over the internet. In their case any wifi / 5G connection available.
 
-In order to achieve this, my Windows Server is confirmed to have line of sight with the Linux servers, has outbound Internet connectivity and is equiped with the (Entra) Connector Service. As soon as the service is installed, the server pops up in the Entra portal as an available connector: 
+In order to achieve this, my Windows Server is confirmed to have line of sight with the Linux servers, has outbound Internet connectivity and is eqquiped with the (Entra) Connector Service. As soon as the service is installed, the server pops up in the Entra portal as an available connector: 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/connectors2.png)
 
@@ -50,7 +50,7 @@ Next, we have to setup a Traffic Forwarding Profile. This enables our configurat
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/forwarding.png)
 
-Thats it, you can visit the Dashboard page for an overview of theps 1 and 2:
+Thats it, you can visit the Dashboard page for an overview of steps 1 and 2:
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/EntraSummary2.png)
 
@@ -77,7 +77,7 @@ It seemed to trigger the registration of the user object in the Global Secure Ac
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/GSAprofile.png)
 
-Since the product at this time is still in preview, chances are this behavior may chance.
+Since the product at this time is still in preview, chances are this behaviour may chance.
 
 
 ### Concluding
