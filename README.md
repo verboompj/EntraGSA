@@ -6,14 +6,9 @@ In this write-up I will dive into one of the two components that make up the Ent
 
 [Intro into GSA](https://github.com/verboompj/EntraGSA/blob/main/README.md#intro-into-gsa)
 
-### part 1 
+## Part 1 
 [Part One of Entra GSA](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part1.md)
 
-- [1. Connector Service](https://github.com/verboompj/EntraGSA/blob/main/README.md#2-connector-service)
-- [2. Entra App registration](https://github.com/verboompj/EntraGSA/blob/main/README.md#2-entra-app-registration)
-- [3. Global Secure Access Client](https://github.com/verboompj/EntraGSA?tab=readme-ov-file#3-global-secure-access-client)
-
-[Testing](https://github.com/verboompj/EntraGSA/blob/main/README.md#testing-in-practice)
 
 
 ## Intro into GSA
