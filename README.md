@@ -5,7 +5,9 @@ In this write-up I will dive into one of the two components that make up the Ent
 
 
 ## Topics 
+
 [Intro of Entra GSA - This Document](https://github.com/verboompj/EntraGSA/blob/main/README.md)
+
 [Part One of Entra GSA - Initial Setup](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part1.md)
 
 
