@@ -6,6 +6,7 @@ In this write-up I will dive into one of the two components that make up the Ent
 
 [Intro into GSA](https://github.com/verboompj/EntraGSA/blob/main/README.md#intro-into-gsa)
 
+### part 1 
 [Setup Entra Private Access](https://github.com/verboompj/EntraGSA/blob/main/README.md#setup-entra-private-access)
 
 - [1. Connector Service](https://github.com/verboompj/EntraGSA/blob/main/README.md#2-connector-service)
