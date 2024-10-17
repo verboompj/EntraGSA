@@ -3,9 +3,9 @@
 
 ## Topics 
 
-[Intro of Entra GSA - This Document](https://github.com/verboompj/EntraGSA/blob/main/README.md)
+[Intro of Entra GSA ](https://github.com/verboompj/EntraGSA/blob/main/README.md)
 
-[Part One of Entra GSA - Initial Setup](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part1.md)
+[Part One of Entra GSA - Initial Setup - This Document ](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part1.md)
 
 [Part Two of Entra GSA - SMB over GSA](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part2.md)
 
