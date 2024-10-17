@@ -43,6 +43,8 @@ Just as with my previous post on GSA, it depends on a moden client (Windows 11 i
 
 And a back-end service called the 'MicrosoftEntraPrivateNetworkConnector', installed on a (preferebly dedicated) server in your corporate LAN environment. This server will do an outbound connect into Entra SSE, allowing Entra to connect incomming Application-tunnel requests to the right Connector service(server) in your corporate LAN. No port forwards, all outbound connectivity with the Entra SSE in the middle authenticating and authorizing connections. 
 
+#### Topology
+
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/AVDBMRG.png)
 
 My Connector Server is deployed in an Azure vNet again (entra02 in the picture) , with an outbound NAT Gateway for default egress traffic to the Internet. In this very vnet, but in a different Subnet I provisioned a Private Endpoint that will allow my vnet to connect to (in this case) a Azure Files share.
@@ -64,5 +66,6 @@ It allows me to allow hybrid users to access Azure file shares using Kerberos au
 With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the 
 
 https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal
+
 
 
