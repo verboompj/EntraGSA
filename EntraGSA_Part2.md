@@ -3,7 +3,7 @@
 
 ## Setup SMB (Server Mesage Block) over Entra Private Access
 
-A quick 
+A quick recap of hte GSA components: 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/private-access-diagram-quick-access3.png)
 
 #### Part 1 for the basics
