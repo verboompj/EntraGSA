@@ -97,7 +97,7 @@ This in itself is a great feature, and I will happily extend this scenario with 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/setupazurefiles.png)
 
-With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the privatelink.file.core.windows.net zone. 
+With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the privatelink.file.core.windows.net zone. Linked the zone to my DNS server vnet and all was well. Pinging // accessing the fileshare is now done over my own vnet.
 
 See: (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal)
 
