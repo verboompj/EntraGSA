@@ -27,7 +27,9 @@ As you can tell, I'm a huge fan of SMB Fileshares in Modern Work environments :-
 The biggest challenge in the post covid world is that we no longer default to the office as our primary work location. 
 To extend SMB fileshares into any location requires either a complete corporate network setup, a VPN topology, or worse; a full-blown VDI environment.
 
-Enter Entra Global Secure Access. Microsoft's answer to an SSE. As covered previously, Global Secure Access (GSA) offers a nifty reversed proxy that allows us to tunnel specific (very specific) applications between a modern endpoint and in this case a legacy Fileshare over the Internet. Best of all is the wealth of other Entra features like the Conditional Access Framework that are included. In other words - I can set conditions for accessing a legacy share over the Internet. SMB sounds a whole lot better now :-).
+Enter Entra Global Secure Access. Microsoft's answer to an SSE. As covered previously, Global Secure Access (GSA) offers a nifty reversed proxy that allows us to tunnel specific (very specific) applications between a modern endpoint and in this case a legacy Fileshare over the Internet. 
+
+Best of all is the wealth of other Entra features like the Conditional Access Framework that are included. In other words - I can set conditions for accessing a legacy share over the Internet. SMB sounds a whole lot better now :-).
 
 #### As an alternative 
 I will mention SMB over QUIC - (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview#smb-over-quic) QUIC tunnels SMB over port 443 and uses UDP as transport layer. 
