@@ -10,7 +10,7 @@ A quick recap of hte GSA components:
 
 [Part One of Entra GSA - Initial Setup](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part1.md)
 
-Part 2 will focus on extending the usecase to running SMB over GSA. 
+[Part 2 extending the usecase to SMB over GSA](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part2.md#setup-smb-server-mesage-block-over-entra-private-access) 
 
 #### 1. Why ? 
 
