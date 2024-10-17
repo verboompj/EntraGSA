@@ -46,7 +46,10 @@ Just as with my previous post on GSA, it depends on a moden client (Windows 11 i
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/validateentrajoined.png)
 
-And a back-end service called the 'MicrosoftEntraPrivateNetworkConnector', installed on a (preferebly dedicated) server in your corporate LAN environment. This server will do an outbound connect into Entra SSE, allowing Entra to connect incomming Application-tunnel requests to the right Connector service(server) in your corporate LAN. No port forwards, all outbound connectivity with the Entra SSE in the middle authenticating and authorizing connections. 
+And a back-end service called the 'MicrosoftEntraPrivateNetworkConnector', installed on a (preferebly dedicated) server in your corporate LAN environment. 
+This server will do an outbound connect into Entra SSE, allowing Entra to connect incomming Application-tunnel requests to the right Connector service(server) in your corporate LAN. 
+
+No port forwards, all outbound connectivity with the Entra SSE in the middle authenticating and authorizing connections. 
 
 
 
