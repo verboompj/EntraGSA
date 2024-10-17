@@ -33,8 +33,11 @@ Enter Entra Global Secure Access. Microsoft's answer to a SSE. As covered previo
 
 Just as with my previous post on GSA, it depends on a moden client (Windows 11 in my case) that is at least Hybrid joined (Entra joined in my case):
 
-![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/validateentrajoined.png))
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/validateentrajoined.png)
 
-And a back-end service called the 'MicrosoftEntraPrivateNetworkConnector', installed on a (preferebly dedicated) server in your corporate LAN environment. This server will do an outbound connect into Entra SSE, allowing Entra to connect incomming Application-tunnel requests to the right Connector service in your LAN. No port forwards, all outbound connectivity with the Entra SSE in the middle authenticating and authorizing connections. 
+And a back-end service called the 'MicrosoftEntraPrivateNetworkConnector', installed on a (preferebly dedicated) server in your corporate LAN environment. This server will do an outbound connect into Entra SSE, allowing Entra to connect incomming Application-tunnel requests to the right Connector service(server) in your corporate LAN. No port forwards, all outbound connectivity with the Entra SSE in the middle authenticating and authorizing connections. 
 
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/AVDBMRG.png)
 
+My Connector Server is deployed in an Azure vNet again, with an outbound NAT Gateway for default egress traffic to the Internet. In this very vnet, but in a different Subnet I provisioned a Private Endpoint that will allow my vnet to connect to (in this case) a Azure Files share.
+Effectively I want to disable public access to the share and only allow connectivity via the private endpoint. 
