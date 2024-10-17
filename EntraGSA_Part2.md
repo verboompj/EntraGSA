@@ -46,10 +46,11 @@ And a back-end service called the 'MicrosoftEntraPrivateNetworkConnector', insta
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/AVDBMRG.png)
 
 My Connector Server is deployed in an Azure vNet again (entra02 in the picture) , with an outbound NAT Gateway for default egress traffic to the Internet. In this very vnet, but in a different Subnet I provisioned a Private Endpoint that will allow my vnet to connect to (in this case) a Azure Files share.
+
 Effectively I want to disable public access to the share and only allow connectivity via the private endpoint. 
 I also have a Fileserver in a different vNet in Azure, that i peered to this vnet that hosts the Connector server. 
 
-Effectively I have 2 Fileshares :
+I will expose 2 Fileshares :
 - Fileshare from a Windows fileserver called File01.blackmesa.local
 - Azure Fileshare from a Storage account called smbsharebm.file.core.windows.net, exposed through a private endpoint only.
 
