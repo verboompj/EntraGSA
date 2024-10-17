@@ -45,8 +45,10 @@ I also have a Fileserver in a different vNet in Azure, that i peered to this vne
 
 Effectively I have 2 Fileshares :
 - Fileshare from a Windows fileserver called File01.blackmesa.local
-- Azure Fileshare from a Storage account called smbsharebm.file.core.windows.net
+- Azure Fileshare from a Storage account called smbsharebm.file.core.windows.net, exposed through a private endpoint only.
 
 Both will be accessible from the corporate LAN, in my case an Azure vNet, and exposed through GSA. 
+
+The Azure Fileshare I did configure for Identity based Access through Entra Kerberos. See [this great Doc:](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable?tabs=azure-portal%2Cregkey)
 
 
