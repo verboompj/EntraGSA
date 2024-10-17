@@ -61,11 +61,16 @@ Both will be accessible from the corporate LAN, in my case an Azure vNet, and ex
 The Azure Fileshare I did configure for Identity based Access through Entra Kerberos. See [this great Doc here](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable?tabs=azure-portal%2Cregkey)
 It allows me to allow hybrid users to access Azure file shares using Kerberos authentication, using Microsoft Entra ID to issue the necessary Kerberos tickets to access the file share with the SMB protocol. This in itself is a great feature, and I will hapily extend this scenario with GSA and Private Access. Remember though, your users need to be Hybrid users -- Synced from ADDS to Entra. The client device can be Entra Only, and will need that registry setting for Kerberos Ticketing. (it s in the Doc) 
 
+
+
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/setupazurefiles.png)
 
-With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the 
+With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the privatelink.file.core.windows.net zone. See: (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal)
 
-https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/privlinkdns.png)
+
+
+
 
 
 
