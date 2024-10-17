@@ -33,6 +33,7 @@ Best of all is the wealth of other Entra features like the Conditional Access Fr
 
 #### As an alternative 
 I will mention SMB over QUIC - (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview#smb-over-quic) QUIC tunnels SMB over port 443 and uses UDP as transport layer. 
+
 It requires a capable endpoint ( Win 11) and a Windows Server 2022 Azure Edition Server to provide the QUIC endpoint. 
 Azure files does not natively support QUIC but can of course be headed with a Fileserver that does support QUIC. 
 
