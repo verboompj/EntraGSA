@@ -76,6 +76,8 @@ It allows me to allow hybrid users to access Azure file shares using Kerberos au
 
 This in itself is a great feature, and I will hapily extend this scenario with GSA and Private Access. Remember though, your users need to be Hybrid users -- Synced from ADDS to Entra. The client device can be Entra Only, and will need that registry setting for Kerberos Ticketing. (it s in the Doc) 
 
+#
+#
 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/setupazurefiles.png)
