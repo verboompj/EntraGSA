@@ -31,6 +31,10 @@ Enter Entra Global Secure Access. Microsoft's answer to a SSE. As covered previo
 ### 2. (any)Fileserver over GSA
 
 
+Just as with my previous post on GSA, it depends on a moden client (Windows 11 in my case) that is at least Hybrid joined (Entra joined in my case):
 
-![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/connectors2.png)
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/validateentrajoined.png))
+
+And a back-end service called the 'MicrosoftEntraPrivateNetworkConnector', installed on a (preferebly dedicated) server in your corporate LAN environment. This server will do an outbound connect into Entra SSE, allowing Entra to connect incomming Application-tunnel requests to the right Connector service in your LAN. No port forwards, all outbound connectivity with the Entra SSE in the middle authenticating and authorizing connections. 
+
 
