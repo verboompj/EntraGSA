@@ -27,6 +27,9 @@ The biggest challenge in the post covid world is that we no longer default to th
 
 Enter Entra Global Secure Access. Microsoft's answer to a SSE. As covered previously, Global Secure Access (GSA) offers a nifty reversed proxy that allows us to tunnel specific (very specific) applications between a modern endpoint and in this case a legacy Fileshare over the Internet. Best of all is the wealth of other Entra features like the Conditional Access Framework that are included. In other words - I can set conditions for accessing a legacy share over the Internet. SMB sounds a whole lot better now :-).
 
+#### As an alternative 
+I will mention SMB over QUIC - (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-overview#smb-over-quic) QUIC tunnels SMB over port 443 and uses UDP as transport layer. It requires a capable endpoint ( Win 11) and a Windows Server 2022 Azure Edition (file)Server to provide the QUIC endpoint. Azure files does not natively support QUIC but can ofcourse be headed with a Fileserver that does support QUIC. 
+I don't think it is as capable as enabling SMB shares over GSA, specifically when it comes to security & identity features. 
 
 ### 2. (any)Fileserver over GSA
 
@@ -49,6 +52,13 @@ Effectively I have 2 Fileshares :
 
 Both will be accessible from the corporate LAN, in my case an Azure vNet, and exposed through GSA. 
 
-The Azure Fileshare I did configure for Identity based Access through Entra Kerberos. See [this great Doc:](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable?tabs=azure-portal%2Cregkey)
+The Azure Fileshare I did configure for Identity based Access through Entra Kerberos. See [this great Doc here](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable?tabs=azure-portal%2Cregkey)
+It allows me to allow hybrid users to access Azure file shares using Kerberos authentication, using Microsoft Entra ID to issue the necessary Kerberos tickets to access the file share with the SMB protocol. This in itself is a great feature, and I will hapily extend this scenario with GSA and Private Access. Remember though, your users need to be Hybrid users -- Synced from ADDS to Entra. The client device can be Entra Only, and will need that registry setting for Kerberos Ticketing. (it s in the Doc) 
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/setupazurefiles.png)
+
+With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the 
+
+https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal
 
 
