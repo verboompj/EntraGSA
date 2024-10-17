@@ -90,7 +90,11 @@ This in itself is a great feature, and I will hapily extend this scenario with G
 
 With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the privatelink.file.core.windows.net zone. 
 See: (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal)
+
+
 I disabled Public access and only allowed connections through the Private Endpoint going forward.
+
+
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/privlinkdns.png)
 
