@@ -62,7 +62,7 @@ In this very vnet, but in a different subnet I have provisioned a Private Endpoi
 
 Effectively I want to disable public access to the share and only allow connectivity via the private endpoint. 
 
-I also have a Fileserver in a different vNet in Azure, that i peered to this vnet. This allows for connectivity between this Fileserver and my Connector server, so i can use the same COnnector server for both shares. 
+I also have a Fileserver in a different vNet in Azure, that i peered to this vnet. This allows for connectivity between this Fileserver and my Connector server, so i can use the same Connector server for both shares. 
 
 I will expose 2 Fileshares :
 - Fileshare from a Windows fileserver called File01.blackmesa.local
