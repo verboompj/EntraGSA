@@ -12,7 +12,7 @@ A quick recap of hte GSA components:
 
 [Part 2 extending the usecase to SMB over GSA](https://github.com/verboompj/EntraGSA/blob/main/EntraGSA_Part2.md#setup-smb-server-mesage-block-over-entra-private-access) 
 
-#### 1. Why ? 
+### 1. Why ? 
 
 
 Good point. SMB is actually just as old as yours truly - It was developed back in good ol' 1983. Great year. 
