@@ -66,9 +66,29 @@ It allows me to allow hybrid users to access Azure file shares using Kerberos au
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/setupazurefiles.png)
 
-With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the privatelink.file.core.windows.net zone. See: (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal)
+With that all setup, i created the Private Endpoint for the Azure Files share and setup DNS conditional forwarding for the privatelink.file.core.windows.net zone. 
+See: (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networking-endpoints?tabs=azure-portal)
+I disabled Public access and only allowed connections through the Private Endpoint going forward.
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/privlinkdns.png)
+
+### 3. GSA rules 
+
+With that I can now create a new application in the Entra suite and publish the 2 FQDN's mentioned for the fileshares.
+Port is obviously still 445 , and protocol remains TCP. 
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/entranap.png)
+
+Back to the client, in my case a Windows 11 VM that is runnins as a VM inside Hyper-V locally on my laptop. 
+In the GSA client we can pull up the Trafic Profile to show what rules it received for tunneling. In my case its the SSH rule from part 1 of GSA, and my 2 fileshares I just added. 
+
+![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/gsaprofile.png)
+
+And yes, it works :-) Performance is quite good as well, i was hovering around 500Mbit or 50 MB per second copying my favorite ISO's to the network shares ;-). 
+The user expoerience is completely transparant, I continue to use my UNC paths like normal and response is instant. 
+
+
+
 
 
 
