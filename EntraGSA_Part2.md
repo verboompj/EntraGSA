@@ -39,6 +39,10 @@ Azure files does not natively support QUIC but can of course be headed with a Fi
 
 I don't think it is as capable as enabling SMB shares over GSA, specifically when it comes to security & identity features. 
 
+#
+
+
+
 ### 2. (any)Fileserver over GSA
 
 
@@ -51,6 +55,7 @@ This server will do an outbound connect into Entra SSE, allowing Entra to connec
 
 No port forwards, all outbound connectivity with the Entra SSE in the middle authenticating and authorizing connections. 
 
+#
 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/AVDBMRG.png)
@@ -88,6 +93,10 @@ See: (https://learn.microsoft.com/en-us/azure/storage/files/storage-files-networ
 I disabled Public access and only allowed connections through the Private Endpoint going forward.
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/privlinkdns.png)
+
+
+#
+
 
 ### 3. GSA rules 
 
