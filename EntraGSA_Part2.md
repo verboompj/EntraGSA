@@ -119,7 +119,8 @@ In the GSA client we can pull up the Trafic Profile to show what rules it receiv
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/gsaprofile.png)
 
 And yes, it works :-) Performance is quite good as well, i was hovering around 500Mbit or 50 MB per second copying my favorite ISO's to the network shares ;-). 
-The user expoerience is completely transparant, I continue to use my UNC paths like normal and response is instant. 
+
+The user experience is completely transparant, I continue to use my UNC paths like normal and response is instant. 
 
 
 
