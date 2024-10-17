@@ -75,6 +75,10 @@ I will expose 2 Fileshares :
 
 Both will be accessible from the corporate LAN, in my case an Azure vNet, and exposed through GSA. 
 
+
+#### Azure Files 
+
+
 The Azure Fileshare I have configured for Identity based Access through Entra Kerberos. See [this great Doc here](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable?tabs=azure-portal%2Cregkey)
 
 It allows me to allow hybrid users to access Azure file shares using Kerberos authentication, using Microsoft Entra ID to issue the necessary Kerberos tickets to access the file share with the SMB protocol. 
