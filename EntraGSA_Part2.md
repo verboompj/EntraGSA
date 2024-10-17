@@ -109,7 +109,7 @@ I disabled Public access and only allowed connections through the Private Endpoi
 ### 3. GSA rules 
 
 With that I can now create a new application in the Entra suite and publish the 2 FQDN's mentioned for the fileshares.
-Port is obviously still 445 , and protocol remains TCP. 
+Port is obviously still 445, and protocol remains TCP. 
 
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/entranap.png)
 
