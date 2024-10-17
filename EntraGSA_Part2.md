@@ -56,7 +56,9 @@ No port forwards, all outbound connectivity with the Entra SSE in the middle aut
 ![Screenshot](https://github.com/verboompj/EntraGSA/blob/main/Pictures/AVDBMRG.png)
 
 #### Topology
-My Connector Server is deployed in an Azure vNet (entra02 in the picture), with an outbound NAT Gateway attached to the vNet for default egress traffic to the Internet. In this very vnet, but in a different subnet I have provisioned a Private Endpoint that will allow my vnet to connect to (in this case) an Azure Files share over private (RFC1918) IP connectivity.
+My Connector Server is deployed in an Azure vNet (entra02 in the picture), with an outbound NAT Gateway attached to the vNet for default egress traffic to the Internet. 
+
+In this very vnet, but in a different subnet I have provisioned a Private Endpoint that will allow my vnet to connect to (in this case) an Azure Files share over private (RFC1918) IP connectivity.
 
 Effectively I want to disable public access to the share and only allow connectivity via the private endpoint. 
 I also have a Fileserver in a different vNet in Azure, that i peered to this vnet that hosts the Connector server. 
