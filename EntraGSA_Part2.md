@@ -19,7 +19,8 @@ Good point. SMB is actually just as old as yours truly - It was developed back i
 
 Even today a lot of companies are still struggling with traditional Fileshares to organize their workflows. Some organizations are simply stuck with it because changing to modern alternatives is considered too costly or disruptive to the business. Who wants to be that manager that prioritizes to optimize operations instead of growing the business, right ? yeah. that’s what your predecessors thought too ;-) ..... 
 
-That leaves us with a bit of an old protocol (no modern authentication & cool stuff like Conditional Access, and in practice limited encryption due to backwards compatibility requirements) and old habits of having that all familiar U, P and G drive mappings on our clients. 
+That leaves us with a bit of an old protocol (no modern authentication & cool stuff like Conditional Access, and in practice limited encryption due to backwards compatibility requirements) and old habits of having that all familiar U:\, P:\ and G:\ drive mappings on our clients. 
+
 As you can tell, I'm a huge fan of SMB Fileshares in Modern Work environments :-) 
 
 The biggest challenge in the post covid world is that we no longer default to the office as our primary work location. And to extend SMB fileshares into any location either requires a complete network setup, a VPN topology or worse, a full-blown VDI environment.
